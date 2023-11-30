@@ -18,6 +18,26 @@ if (!head)
 Return (NULL);
 new = malloc(sizeof(listint_t));
 if (!new)
-Return (NULL)
+Return (NULL);
+new->n = number;
+new->next = NULL;
+if (!*head || (!head)->n > number)
+{
+new->next = *head;
+return (*head = new);
 }
+else
+{
+while (current && current->n < number)
+{
+temp = current;
+current = current->next;
+}
+temp->next = new;
+new->next = current;
+}
+return (new);
+
+}
+
 
