@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "lists.h"
+#include <unistd.h>
+/**
+ * insert_node - insert a number into a sorted list
+ *
+ * @head: a linked list
+ * @number: number to be returned
+ * Return: Pointer to the new head
+ */
+listint_t *insert_node(listint_t **head, int number)
+{
+listint_t *current = *head;
+listint_t *new = NULL;
+listint_t *temp = NULL;
+if (!head)
+Return (NULL);
+new = malloc(sizeof(listint_t));
+if (!new)
+Return (NULL)
+}
+
